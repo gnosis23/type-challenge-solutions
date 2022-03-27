@@ -49,42 +49,28 @@
 
 /* _____________ Your Code Here _____________ */
 
-type PrimitiveConstructors = StringConstructor | BooleanConstructor | NumberConstructor | RegExpConstructor;
-// Class类型怎么判断？
-type BasicsConstructors = PrimitiveConstructors | Function;
+// https://github.com/type-challenges/type-challenges/issues/215
+type a = StringConstructor
 
-// 不是很优雅
-type ToBasicType<T> = (
-  T extends BasicsConstructors
-  ? T extends StringConstructor
-    ? string
-    : T extends BooleanConstructor
-      ? boolean
-      : T extends NumberConstructor
-        ? number
-        : T extends RegExpConstructor
-        ? RegExp
-        : T extends Function
-          ? T["prototype"]
-          : never
-  : T
-);
+type Prop<T = any> = PropType<T> | { type?: PropType<T> }
+type PropType<T> = PropConstructor<T> | PropConstructor<T>[]
+
+type PropConstructor<T = any> =
+  | { new (...args: any[]): T & object } /* primitive to object */
+  | { (): T }
 
 type TransformType<T> = (
-  T extends { type: infer A }
-  ? TransformType<A>
-  : T extends (infer A)[]
-    ? A extends A ? TransformType<A> : never
-    : T extends Record<string, never>
-      ? any
-      : T extends BasicsConstructors
-      ? ToBasicType<T>
-      : T
+  T extends Prop<infer A>
+  ? unknown extends A
+    ? any
+    : A
+  : any
 )
 
 type GetProp<T extends Record<string, any>> = {
   [Prop in keyof T]: TransformType<T[Prop]>
-};
+}
+
 
 // computed属性的类型是函数的返回值
 type GetComputed<T extends Record<string, any>> = {
