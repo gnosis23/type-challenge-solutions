@@ -19,7 +19,14 @@
 
 /* _____________ Your Code Here _____________ */
 
-type UnionToIntersection<U> = U
+// 利用了函数参数是逆变的性质
+// 现实中的例子：
+// https://github.com/twitterdev/twitter-api-typescript-sdk/blob/3332ec7ddea511c8cc30b59258fc3e676e6f32bb/src/types.ts#L36
+type UnionToIntersection<U> = 
+  (U extends any ? (a: U) => void : never) extends ((a: infer A) => void)
+    ? A
+    : never 
+
 
 /* _____________ Test Cases _____________ */
 import { Equal, Expect } from '@type-challenges/utils'

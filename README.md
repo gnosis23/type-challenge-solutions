@@ -63,7 +63,7 @@ Easy 题目列表:
 - Vue basic props🌟🌟🌟: 自动类型推导，primitive constructor -> primitive 方法
 - Pinia: 同上
 - `Currying`: 函数匹配
-
+- `UnionToIntersection`: 函数参数逆变
 
 
 
