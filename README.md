@@ -61,7 +61,8 @@ Easy 题目列表:
 题目列表
 - Simple Vue🌟🌟: 自动类型推导，ThisArgs
 - Vue basic props🌟🌟🌟: 自动类型推导，primitive constructor -> primitive 方法
-
+- Pinia: 同上
+- `Currying`: 函数匹配
 
 
 
