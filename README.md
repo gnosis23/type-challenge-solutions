@@ -1,6 +1,10 @@
 # type-challenge-solutions
 [Type-Challenge](https://github.com/type-challenges/type-challenges) 是一个训练类型编写的题库，通过它可以学习 TypeScript 类型编写技巧。
 
+## docs
+
+- [TypeScript infer介绍](./docs/infer.md)
+
 ## Type-Challenge easy
 
 Easy 题目列表:
