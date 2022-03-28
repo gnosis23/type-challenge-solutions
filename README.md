@@ -54,6 +54,8 @@ Easy 题目列表:
 - BEM: 分配率
 - MapTypes: 在 union 中 find
 - Percentage Parser: 字符串匹配
+- `TupleToUnion`: T[number]
+- `DropChar`: 字符串匹配
 
 
 ## Type-Challenge hard
