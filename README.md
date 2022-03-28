@@ -66,6 +66,8 @@ Easy 题目列表:
 - Pinia: 同上
 - `Currying`: 函数匹配
 - `UnionToIntersection`: 函数参数逆变
+- `GetRequired`: 去掉属性如果还是子类，那么就是必选的
+- `GetOptional`: 同上
 
 
 
