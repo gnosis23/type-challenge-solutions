@@ -73,7 +73,7 @@ Easy 题目列表:
 - `UnionToIntersection`: 函数参数逆变
 - `GetRequired`: 去掉属性如果还是子类，那么就是必选的
 - `GetOptional`: 同上
-
-
+- `Split`: 空字符切割的时候就是将所有字母分开
+- `FilterOut`: tuple filter out
 
 
