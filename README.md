@@ -6,6 +6,10 @@
 - [TypeScript infer介绍](./docs/infer.md)
 - [Variadic Tuple Types](./docs/variadic-tuple-types.md)
 
+## articles
+
+- [Extract parameter types from string literal types with TypeScript](https://lihautan.com/extract-parameters-type-from-string-literal-types-with-typescript/)
+
 ## Type-Challenge easy
 
 Easy 题目列表:
