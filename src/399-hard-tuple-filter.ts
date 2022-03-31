@@ -19,30 +19,14 @@
 /* _____________ Your Code Here _____________ */
 
 type FilterOut<T extends any[], F, R extends any[] = []> = (
-  T["length"] extends 0
-    ? R
-    : T extends [infer A, ...infer B]
-      ? IsEqualUnion<A, F> extends true
-        ? FilterOut<B, F, R>
-        : FilterOut<B, F, [...R, A]>
-      : never
+  T extends [infer A, ...infer B]
+    ? IsInclude<A, F> extends true
+      ? FilterOut<B, F, R>
+      : FilterOut<B, F, [...R, A]>
+    : R
 )
 
-type IsEqualUnion<A, U> = U extends any
-  ? IsEqual<A, U> extends true
-    ? true
-    : false
-  : false
-
-type IsEqual<A, B> =
-  [A] extends [B] 
-  ? [B] extends [A] ? true : false
-  : false;
-
-type a1 = IsEqual<never, null> extends true ? true : false;
-type t2 = IsEqualUnion<never, never | null | undefined>;
-
-type t1 = FilterOut<[never, 1, 'a', undefined, false, null], never | null | undefined>;
+type IsInclude<A, U> = A extends U ? true : false
 
 /* _____________ Test Cases _____________ */
 import { Equal, Expect } from '@type-challenges/utils'
