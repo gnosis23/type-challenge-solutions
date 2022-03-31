@@ -31,10 +31,6 @@ type Split<S extends string, SEP extends string, R extends string[] = []> = (
         : [...R, S]
 )
 
-type t1 = Split<'Hi! How are you?', ''>
-type t2 = Split<'', 'z'>
-type t3 = Split<string, 'whatever'>
-
 /* _____________ Test Cases _____________ */
 import { Equal, Expect, ExpectFalse, NotEqual } from '@type-challenges/utils'
 
@@ -45,6 +41,9 @@ type cases = [
   Expect<Equal<Split<'', ''>, []>>,
   Expect<Equal<Split<'', 'z'>, ['']>>,
   Expect<Equal<Split<string, 'whatever'>, string[]>>,
+  Expect<Equal<Split<'a=1&b=2&c=3', '&'>, ['a=1', 'b=2', 'c=3']>>,
+  Expect<Equal<Split<'a=1', '='>, ['a', '1']>>,
+  Expect<Equal<Split<'a', '='>, ['a']>>,
 ]
 
 
