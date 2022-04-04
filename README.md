@@ -3,6 +3,7 @@
 
 ## docs
 
+- [Literal Inference](./docs/literal-inference.md)
 - [TypeScript infer介绍](./docs/infer.md)
 - [Variadic Tuple Types](./docs/variadic-tuple-types.md)
 
