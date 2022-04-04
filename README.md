@@ -68,6 +68,9 @@ Easy 题目列表:
 - [DropChar](./src/2070-medium-drop-char.ts):  字符串匹配
 - FlattenDepth: #recursion #array
 - [GreaterThan](./src/4425-medium-greater-than.ts): #math
+- [IndexOf](./src/5153-medium-indexof.ts): #array
+- [Join](./src/5310-medium-join.ts): #array 强制转换字符串
+- [LastIndexOf](./src/5317-medium-lastindexof.ts): #array
 
 
 ## Type-Challenge hard
