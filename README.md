@@ -21,7 +21,7 @@
 Easy 题目列表:
 - [Pick](./src/4-easy-pick.ts): 通过 `mapped-types` 可以将和类型转为对象类型
 - [Readonly](./src/7-easy-readonly.ts): 通过 `mapped-types` 中的 Mapping Modifiers 
-- [TupleToObject](./src/11-easy-tuple-to-object.ts): 通过 T[number] 将数组转为和类型，利用 `mapped-types` 获得对象类型
+- [TupleToObject](./src/11-easy-tuple-to-object.ts)🌟: 通过 T[number] 将数组转为和类型，利用 `mapped-types` 获得对象类型
 - [First](./src/14-easy-first.ts): 通过 `infer` 解构数组类型
 - [LengthOfTuple](./src/18-easy-tuple-length.ts): 访问数组类型 T["length"]
 - [Exclude](./src/43-easy-exclude.ts): `条件类型` 和 `分配条件类型`
@@ -69,9 +69,10 @@ Easy 题目列表:
 - [DropChar](./src/2070-medium-drop-char.ts):  字符串匹配
 - FlattenDepth: #recursion #array
 - [GreaterThan](./src/4425-medium-greater-than.ts): #math
-- [IndexOf](./src/5153-medium-indexof.ts): #array
+- [IndexOf](./src/5153-medium-indexof.ts)🌟: #array
 - [Join](./src/5310-medium-join.ts): #array 强制转换字符串
 - [LastIndexOf](./src/5317-medium-lastindexof.ts): #array
+- [Trunc](./src/5140-medium-trunc.ts): #template-literal 
 
 
 ## Type-Challenge hard
@@ -79,10 +80,11 @@ Easy 题目列表:
 题目列表
 - Simple Vue🌟🌟: 自动类型推导，ThisArgs
 - Vue basic props🌟🌟🌟: 自动类型推导，primitive constructor -> primitive 方法
-- Pinia: 同上
-- [Currying](./src/17-hard-currying.ts):  函数匹配
+- Pinia🌟: 同上
+- [Currying](./src/17-hard-currying.ts)🌟:  函数匹配
 - [UnionToIntersection](./src/55-hard-union-to-intersection.ts):  函数参数逆变
 - [GetRequired](./src/57-hard-get-required.ts):  去掉属性如果还是子类，那么就是必选的
 - [GetOptional](./src/59-hard-get-optional.ts):  同上
-- [Split](./src/2822-hard-split.ts):  空字符切割的时候就是将所有字母分开
+- [Split](./src/2822-hard-split.ts)🌟:  空字符切割的时候就是将所有字母分开
 - [FilterOut](./src/399-hard-tuple-filter.ts):  tuple filter out
+- [Get](./src/270-hard-typed-get.ts)🌟: #template-literal
