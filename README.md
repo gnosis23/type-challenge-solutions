@@ -73,6 +73,9 @@ Easy 题目列表:
 - [Join](./src/5310-medium-join.ts): #array 强制转换字符串
 - [LastIndexOf](./src/5317-medium-lastindexof.ts): #array
 - [Trunc](./src/5140-medium-trunc.ts): #template-literal 
+- [Reverse](./src/3192-medium-reverse.ts): #tuple
+- [Zip](./src/4471-medium-zip.ts): #tuple
+- [IsTuple](./src/4484-medium-istuple.ts)🌟: #tuple
 
 
 ## Type-Challenge hard
